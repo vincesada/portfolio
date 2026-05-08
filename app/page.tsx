@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Mail, Phone, ExternalLink, ChevronDown } from 'lucide-react';
 
 export default function Portfolio() {
@@ -72,23 +73,41 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center pt-20 pb-20 px-4">
-        <div className="max-w-3xl">
-          <div className="mb-6 inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent text-sm font-medium">
-            IT Professional
-          </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance leading-tight">
-            Vince Froilan <span className="text-primary">Briones</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance leading-relaxed">
-            Building intelligent automation solutions and AI-powered systems. Specializing in workflow optimization, system integration, and technical innovation.
-          </p>
-          <div className="flex gap-4">
-            <a href="#contact" className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity">
-              Get In Touch
-            </a>
-            <a href="#projects" className="px-8 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors">
-              View Work
-            </a>
+        <div className="max-w-5xl w-full">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Text Content */}
+            <div>
+              <div className="mb-6 inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent text-sm font-medium">
+                IT Professional
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance leading-tight">
+                Vince Froilan <span className="text-primary">Briones</span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 text-balance leading-relaxed">
+                Building intelligent automation solutions and AI-powered systems. Specializing in workflow optimization, system integration, and technical innovation.
+              </p>
+              <div className="flex gap-4">
+                <a href="#contact" className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity">
+                  Get In Touch
+                </a>
+                <a href="#projects" className="px-8 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors">
+                  View Work
+                </a>
+              </div>
+            </div>
+
+            {/* Profile Image */}
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-64 h-80 rounded-2xl overflow-hidden border-2 border-primary shadow-2xl">
+                <Image
+                  src="/profile.jpg"
+                  alt="Vince Froilan Briones"
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
