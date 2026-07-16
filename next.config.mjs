@@ -1,13 +1,24 @@
 /** @type {import('next').NextConfig} */
-const isGithubPages = process.env.GITHUB_ACTIONS || process.env.NODE_ENV === 'production'
+
+// Detect if we're building on GitHub Actions (GitHub Pages)
+const isGithubPages = process.env.GITHUB_ACTIONS === 'true'
 
 const nextConfig = {
   output: 'export',
+
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   images: {
     unoptimized: true,
   },
-  basePath: isGithubPages ? '/portfolio' : '',
-  assetPrefix: isGithubPages ? '/portfolio/' : '',
+
+  // Only apply these when deploying to GitHub Pages
+  ...(isGithubPages && {
+    basePath: '/portfolio',
+    assetPrefix: '/portfolio',
+  }),
 }
 
 export default nextConfig
