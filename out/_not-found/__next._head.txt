@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[96985,["/_next/static/chunks/0~rl5rpep0qhe.js","/_next/static/chunks/0t6_rl0~wut5h.js"],"ViewportBoundary"]
+3:I[96985,["/_next/static/chunks/0~rl5rpep0qhe.js","/_next/static/chunks/0t6_rl0~wut5h.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[78139,["/_next/static/chunks/0~rl5rpep0qhe.js","/_next/static/chunks/0t6_rl0~wut5h.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Vince Froilan Briones - Full Stack Developer"}],["$","meta","1",{"name":"description","content":"Portfolio of Vince Froilan Briones - IT professional specializing in system automation, AI integration, and full-stack web development."}],["$","link","2",{"rel":"icon","href":"/favicon.png"}],["$","link","3",{"rel":"apple-touch-icon","href":"/favicon.png"}],["$","$L5","4",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9e5gMhq3PDkh3lGnDdXVn"}
